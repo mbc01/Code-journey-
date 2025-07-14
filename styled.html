@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>styled forms</title>
+    <style>
+        body{
+            background-color:#f2f2f2;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:30px;
+        }
+        .box{
+            max-width:800px;
+            background-color: lightgray;
+            margin:auto;
+            padding:20px;
+            border-radius: 15px;
+            border: 1px solid gray;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+        button{
+            border-radius:4px;
+            border:none;
+            background-color:lightblue;
+            cursor:pointer;
+            color:white;
+            padding:15px;
+        }
+        button:hover{
+            background-color:blue;
+        }
+        label{
+            font-weight:bold;
+        }
+       textarea{
+           border:1px solid gray;
+           width:200px;
+           padding:20px;
+           margin: 5px;
+           border-radius: 15px;
+       }
+    </style>
+</head>
+<body>
+<div class="box">
+    <forms>
+        <h1 style="color:darkmagenta">Fill in your details to register</h1>
+        <!--the label and input for first name-->
+        <label for="fname">First Name</label>
+        <input type="fname" id="fname" name="fname" placeholder="your name"><br><br>
+
+        <!--the label and input for last name-->
+        <label for="lname">Last Name</label>
+        <input type="lname" id="lname" name="lname" placeholder="your last name"><br><br>
+               <br><br>
+        <!--radio for gender-->
+        <input type="radio" id="gender" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="gender" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+        <label for="email">email</label>
+        <input type="email" id="email" name="email">
+
+        <br><br>
+
+        <label for="country"> country</label>
+        <select id="country" name="country">
+            <option value="zambia">zambia</option>
+            <option value="malawi">malawi</option>
+            <option values="zimbabwe">zimbabwe</option>
+            <option valus="congo">congo</option>
+        </select>
+        <br><br>
+        <!--the textarea -->
+        <label for="message">why do you want to join the movement?</label><br><br>
+        <textarea id="message" name="message  rows="4px" placeholder="explain why you want to be a full stack developer"></textarea><br><br>
+
+        <button input="submit">submit</button>
+
+
+    </forms>
+</div>>
+</body>
+</html>
