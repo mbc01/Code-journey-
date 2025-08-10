@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>z-index</title>
+    <style>
+
+         .container {
+        width: 400px;
+        height: 400px;
+        border: 2px solid black;
+        margin: 50px auto;
+        position: relative; 
+    }
+ 
+        
+        .me{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+
+        }
+
+        .one{
+            background-color: red;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+            animation-name: sam;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+
+        }
+        .two{
+            background-color: powderblue;
+            top: 100px;
+            left: 100px;
+            z-index: 2;
+            animation-name: mbc;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+
+        }
+        .three{
+            background-color: coral;
+            top: 150px;
+            left: 150px;
+            z-index: 3;
+            animation-name: mumba;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes sam {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                background-color: greenyellow;
+                left: 50px;
+                top: 0px
+            }
+            50% {
+                background-color: beige;
+                left: 50px;
+                top: 50px
+            }
+            75% {
+                background-color: tomato;
+                left: 0px;
+                top: 50px
+            }
+            100% {
+                background-color: pink;
+                left: 0px;
+                top: 0px
+            }
+        }
+/*the effect of the second animation*/
+        @keyframes mbc {
+        0% {
+            background-color: powderblue;
+            left: 0px;
+            top: 0px;
+        }
+         25%{
+             background-color: purple;
+             left: 150px;
+             top: 0px
+         }
+         50%{
+             background-color: tomato;
+             left: 150px;
+             top: 150px}
+          75%{
+              background-color: coral;
+              left: 0px;
+              top: 150px}
+            100%{
+                background-color:pink;
+                left: 0px;
+                top: 0px}
+        }
+
+        /*the effect of the mumba animation*/
+        @keyframes mumba {
+            0%{
+                background-color: coral;
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                background-color: darkslategrey;
+                left: 200px;
+                top: 0px;
+            }
+            50%{background-color: yellow;
+                left: 200px;
+                top: 200px;
+            }
+            75%{
+                background-color: cornflowerblue ;
+                left: 0px;
+                top: 200px}
+            100%{background-color:yellow;
+                left: 0px;
+                top: 0px}
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="me one" >hi</div>
+    <div class="me two" >hello</div>
+    <div class="me three" >laka</div>
+</div>
+</body>
+</html>
