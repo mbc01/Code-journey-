@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewpoint" content="width=device-width, intial-scale=1.0">
+  <head>
+    <title>grids</title>
+    <style>
+    
+      .container{
+        display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-template-rows: repeat(2,1fr);
+        gap: 50px;
+        background-color: lightblue;
+        
+        padding: 20px;
+        
+      } 
+        
+        
+        #one{
+          background-color: tomato;
+          border: 2px solid black;
+          padding: 10px;
+          color: white;
+          font-size: 18px;
+          justify-content: center;
+          display: flex;
+          grid-column:1/span3;
+          
+          
+          
+          
+        }
+        
+      #two{
+            background-color: coral;
+          border: 2px solid black;
+          padding: 10px;
+          color: white;
+          font-size: 18px;
+          justify-content: center;
+          display: flex;
+        }
+        
+        #three{
+          background-color: red;
+          border: 2px solid black;
+          padding: 10px;
+          color: white;
+          font-size: 18px;
+          justify-content: center;
+          display: flex;
+        }
+        
+        #four{
+          background-color: pink;
+          border: 2px solid black;
+          padding: 10px;
+          color: white;
+          font-size: 18px;
+          justify-content: center;
+          display: flex;
+        }
+        
+      #five{
+          background-color: gray;
+          border: 2px solid black;
+          padding: 10px;
+          color: white;
+          font-size: 18px;
+          justify-content: center;
+          display: flex;
+      }
+      
+      #six{
+          background-color: purple;
+          border: 2px solid black;
+          padding: 10px;
+          color: white;
+          justify-content: center;
+          font-size: 18px;
+          display: flex;
+      }
+    </style>
+    <body>
+      <h1>the journey of the frontend dev and current resources</h1>
+      <div class="container">
+        <div id="one">HTML</div>
+        <div id="two">CSS</div>
+        <div id="three">JAVASCRIPT</div>
+        <div id="four">CHATgpt</div>
+        <div id="five">GITHUB</div>
+        <div id="six">ACODE</div>
+      </div>
+    </body>
+    </html>
